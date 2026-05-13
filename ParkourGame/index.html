@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🏃 跑酷大冒险 - 丛林穿越</title>
+  <link rel="stylesheet" href="./src/assets/styles/main.css" />
+</head>
+<body>
+  <div class="game-wrapper" id="gameWrapper">
+    <canvas id="gameCanvas"></canvas>
+    <div class="ui-overlay">
+      <div class="score-display" id="scoreDisplay">
+        <span class="coin-icon">🪙</span>
+        <span id="scoreValue">0</span>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progressBar" style="width: 0%;"></div>
+    </div>
+    <div class="message-overlay" id="messageOverlay">
+      <div class="title" id="msgTitle"></div>
+      <div class="subtitle" id="msgSubtitle"></div>
+      <button class="btn-restart" id="btnRestart" style="display:none;">🔄 再来一次</button>
+      <div class="restart-hint" id="restartHint" style="display:none;">按 空格键 或 点击屏幕 重新开始</div>
+    </div>
+    <div class="hint-text" id="hintText">按 <strong>空格键</strong> 或 <strong>点击屏幕</strong> 跳跃 · 支持二段跳</div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
